@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: dev_0001
+      author: Potapenko
+  - include:
+      file: classpath:db/changelog/changeset/dev_0001/DDL/001_create_table_users.sql
+  - include:
+      file: classpath:db/changelog/changeset/dev_0001/DML/001_insert_data_users.sql

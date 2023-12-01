@@ -1,0 +1,13 @@
+apiVersion: skaffold/v4beta8
+kind: Config
+metadata:
+  name: crm-base-db-service
+build:
+  artifacts:
+    - image: crm-base-db-service
+      docker:
+        dockerfile: Dockerfile
+manifests:
+  rawYaml:
+    - ./k8s/postgres/*.yaml
+    - ./k8s/db-service/*.yaml
