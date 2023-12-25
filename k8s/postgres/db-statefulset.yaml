@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: postgres-db
-          image: postgres
+          image: postgres:15.0
           imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:
@@ -30,7 +30,7 @@ spec:
               name: postgresdb
           volumeMounts:
             - name: postgres-volume-mount
-              mountPath: /var/lib/postgresql/data
+              mountPath: /data
           readinessProbe:
             exec:
               command:
@@ -50,4 +50,5 @@ spec:
       volumes:
         - name: postgres-volume-mount
           persistentVolumeClaim:
-            claimName: postgres-pvc
+                      claimName: postgres-pvc
+      restartPolicy: Always
