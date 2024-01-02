@@ -3,8 +3,8 @@ databaseChangeLog:
       id: dev_0002
       author: Grakov
   - include:
-      file: classpath:db/changelog/changeset/dev_0002/DDL/003_create_table_transactions.sql
+      file: classpath:db/changelog/changeset/dev_0002/DDL/003_create_table_sales.sql
 
   - include:
-      file: classpath:db/changelog/changeset/dev_0002/DML/003_insert_data_transactions.sql
+      file: classpath:db/changelog/changeset/dev_0002/DML/003_insert_data_sales.sql
 
