@@ -4,7 +4,10 @@ databaseChangeLog:
       author: Grakov
   - include:
       file: classpath:db/changelog/changeset/dev_0002/DDL/003_create_table_sales.sql
+  - include:
+      file: classpath:db/changelog/changeset/dev_0002/DML/004_insert_data_products.sql
 
   - include:
       file: classpath:db/changelog/changeset/dev_0002/DML/003_insert_data_sales.sql
+
 
