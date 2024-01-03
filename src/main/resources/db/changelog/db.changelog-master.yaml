@@ -1,4 +1,6 @@
 databaseChangeLog:
   - include:
       file: classpath:db/changelog/changeset/dev_0001/changelog.yaml
+  - include:
+      file: classpath:db/changelog/changeset/dev_0002/changelog.yaml
 
